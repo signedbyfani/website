@@ -3,7 +3,7 @@ import type { Metadata } from "next/types";
 export const OpenGraph: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: {
-    default: "Rayandra Valera - Designer",
+    default: "Fanindra Maharana",
     template: "%s",
   },
   description: "...",
@@ -12,14 +12,14 @@ export const OpenGraph: Metadata = {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-    title: "Rayandra Valera - Designer",
+    title: "Fanindra Maharana",
     description: "...",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/og`],
-    siteName: "Rayandra Valera - Designer",
+    siteName: "Fanindra Maharana",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rayandra Valera - Designer",
+    title: "Fanindra Maharana",
     description: "...",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/og`],
   },
