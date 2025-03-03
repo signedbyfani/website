@@ -55,15 +55,15 @@ export default function Home() {
             <h2 className="font-normal text-muted">Interaction Designer</h2>
           </div>
           <div className="flex flex-row gap-4">
-            <a href="https://www.linkedin.com/in/rayandra" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/fanindra-m/" target="_blank" rel="noreferrer">
               <div className="flex flex-row items-center justify-center gap-1 text-muted2 text-sm hover:text-foreground hover:underline">
                 LinkedIn
                 <ArrowUpRightIcon className="h-4 w-4" />
               </div>
             </a>
-            <a href="https://dribbble.com/rayvaltra" target="_blank" rel="noreferrer">
+            <a href="https://www.behance.net/imfanindra" target="_blank" rel="noreferrer">
               <div className="flex flex-row items-center justify-center gap-1 text-muted2 text-sm hover:text-foreground hover:underline">
-                Dribbble
+                Behance
                 <ArrowUpRightIcon className="h-4 w-4" />
               </div>
             </a>
@@ -73,7 +73,7 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <div className="flex flex-col">
-          <p>More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping digital, physical, and psychological journeys.</p>
+          <p>More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological experiences.</p>
           <div className="flex flex-row gap-4 pt-6">
             <button
               type="button"
