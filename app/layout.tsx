@@ -30,7 +30,7 @@ export default function RootLayout({
       <Analytics />
       <SpeedInsights />
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.svg" />
       </head>
       <body>
         <Providers>
