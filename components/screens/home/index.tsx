@@ -1,9 +1,7 @@
 "use client";
 
 import type { ImageProps } from "@/types/gallery";
-
 import { Footer } from "@/components/footer";
-import Gallery from "@/components/gallery";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
 
@@ -88,11 +86,6 @@ export default function Home() {
       </FadeIn.Item>
       <FadeIn.Item>
         <Posts category="projects" />
-      </FadeIn.Item>
-      <Spacer />
-      <FadeIn.Item>
-        <h2 className="mb-2 w-full border-border border-b py-2 capitalize">Designs</h2>
-        {!isLoadingImages && images.length > 0 && <Gallery images={images} />}
       </FadeIn.Item>
       <Spacer />
       <FadeIn.Item>
