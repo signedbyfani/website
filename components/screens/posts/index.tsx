@@ -43,8 +43,6 @@ export const Layout = ({ post, route }: Props) => {
           <PublishedTime />
           <Seperator />
           <UpdateTime />
-          <Seperator />
-          <ReadingTime />
         </div>
         {post.media?.thumbnail && (
           <div className="mt-4">
