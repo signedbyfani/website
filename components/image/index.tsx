@@ -14,8 +14,7 @@ interface MDXImageProps extends ImageProps {
 
 export default function MDXImage({ caption, alt, ...props }: MDXImageProps) {
   const [isImageLoading, setImageLoading] = React.useState(true);
-  const [isOverlayOpen, setIsOverlayOpen] = React.useState(false);
-
+  
   return (
     <>
       <motion.div className="mt-4 mb-16 flex flex-col justify-end gap-2">

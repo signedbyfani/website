@@ -8,7 +8,6 @@ import { MDX } from "@/mdx-components";
 import Image from "next/image";
 
 import React from "react";
-import { readingTime } from "reading-time-estimator";
 
 interface Props {
   post: Post;
@@ -23,15 +22,9 @@ export const Layout = ({ post, route }: Props) => {
   };
 
   const PublishedTime = () => {
-    return <div>Published {formatter.date(new Date(post.time.created))}</div>;
-  };
-  const UpdateTime = () => {
-    return <div>Updated {formatter.date(new Date(post.time.updated))}</div>;
+    return <div>{formatter.date(new Date(post.time.created))}</div>;
   };
 
-  const ReadingTime = () => {
-    return <div>{readingTime(post.content).minutes} minutes read</div>;
-  };
 
   return (
     <React.Fragment>
@@ -41,8 +34,6 @@ export const Layout = ({ post, route }: Props) => {
         </div>
         <div className="mt-1 flex-wrap gap-0 text-muted text-small md:flex md:gap-2 ">
           <PublishedTime />
-          <Seperator />
-          <UpdateTime />
         </div>
         {post.media?.thumbnail && (
           <div className="mt-4">

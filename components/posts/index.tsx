@@ -6,6 +6,7 @@ import { Link as NextViewTransition } from "next-view-transitions";
 import React, { useEffect, useState } from "react";
 
 import { Card } from "../card";
+import { BlogCard } from "../blog-card";
 
 interface PostProps {
   category: string;
@@ -22,9 +23,10 @@ export const Posts = ({ category }: PostProps) => {
         if (!response.ok) throw new Error("Failed to fetch posts");
         const data = await response.json();
         setPosts(
-          data.sort((a: Post, b: Post) => {
-            return new Date(b.time.created).getTime() - new Date(a.time.created).getTime();
-          }),
+          [...data].sort(
+            (a: Post, b: Post) =>
+              new Date(b.time.created).valueOf() - new Date(a.time.created).valueOf()
+          )
         );
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -36,28 +38,52 @@ export const Posts = ({ category }: PostProps) => {
     fetchPosts();
   }, [category]);
 
-  const Seperator = () => <div className="border-border border-t" />;
-
   if (isLoading) return null;
   if (posts.length === 0) return null;
 
+  const projects = posts.filter(post => category === "projects");
+  const blogs = posts.filter(post => category !== "projects");
+
   return (
     <div className="mt-6 flex flex-col">
-      <NextViewTransition href={`/${category}`} className="flex justify-between">
-        <h2 className="mb-2 w-full border-border border-b py-2 capitalize">
-          {category} {posts.length > 0 && `(${posts.length})`}
-        </h2>
-        <Seperator />
-      </NextViewTransition>
-
-      {posts.map((post) => (
-        <React.Fragment key={post.slug}>
-          {/* <Seperator /> */}
-          <NextViewTransition href={`/${category}/${post.slug}`} className="flex w-full justify-between py-2">
-            <Card title={post.title} body={post.summary} imageSrc={post.media?.thumbnail || "/default-thumbnail.png"} cardClassName="w-full" />
+      {projects.length > 0 && (
+        <section>
+          <NextViewTransition href={`/${category}`} className="flex justify-between">
+            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">
+              Projects ({projects.length})
+            </h2>
           </NextViewTransition>
-        </React.Fragment>
-      ))}
+          {projects.map((post) => (
+            <React.Fragment key={post.slug}>
+              <NextViewTransition href={`/${category}/${post.slug}`} className="flex w-full justify-between py-8">
+                <Card
+                  title={post.title}
+                  body={post.summary}
+                  imageSrc={post.media?.thumbnail || "/default-thumbnail.png"}
+                  cardClassName="w-full rounded-large"
+                />
+              </NextViewTransition>
+            </React.Fragment>
+          ))}
+        </section>
+      )}
+
+      {blogs.length > 0 && (
+        <section>
+          <NextViewTransition href={`/${category}`} className="flex justify-between">
+            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">
+              Blog Posts ({blogs.length})
+            </h2>
+          </NextViewTransition>
+          {blogs.map((post) => (
+            <React.Fragment key={post.slug}>
+              <NextViewTransition href={`/${category}/${post.slug}`} className="flex w-full justify-between py-2">
+                <BlogCard title={post.title} time={post.time} />
+              </NextViewTransition>
+            </React.Fragment>
+          ))}
+        </section>
+      )}
     </div>
   );
 };
