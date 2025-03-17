@@ -121,9 +121,9 @@
       @apply text-small;
     }
 
-    /* a {
+    a {
       @apply transition hover:opacity-80;
-    } */
+    }
 
     ol {
       @apply list-decimal text-muted2;

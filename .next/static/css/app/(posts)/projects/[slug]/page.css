@@ -1,0 +1,519 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./components/footnote/styles.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_footnote-back-reference__bRzf1 {
+  text-align: left;
+  cursor: pointer;
+}
+
+  .styles_footnote-back-reference__bRzf1:hover {
+    opacity: 0.8;
+  }
+
+.styles_footnote-back-reference__bRzf1 svg {
+  width: 12px;
+  height: 12px;
+}
+
+.styles_footnote-back-reference__bRzf1 a {
+  color: var(--gray-9) !important;
+}
+
+.styles_footnote-forward-reference__6zHu5 {
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./node_modules/.pnpm/fumadocs-ui@14.5.4_@types+react-dom@18.3.1_@types+react@18.3.11_next@14.2.15_@babel+core@7.25_75lklpqg5kpjtjwqu6fi4hybhq/node_modules/fumadocs-ui/dist/components/image-zoom.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+[data-rmiz] {
+  display: block;
+  position: relative;
+}
+
+[data-rmiz-ghost] {
+  pointer-events: none;
+  position: absolute;
+}
+
+[data-rmiz-btn-zoom],
+[data-rmiz-btn-unzoom] {
+  display: none;
+}
+
+[data-rmiz-content='found'] img {
+  cursor: zoom-in;
+}
+
+[data-rmiz-modal][open] {
+  width: 100vw /* fallback */;
+  width: 100dvw;
+
+  height: 100vh /* fallback */;
+  height: 100dvh;
+
+  background-color: transparent;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+}
+
+[data-rmiz-modal]:focus-visible {
+  outline: none;
+}
+
+[data-rmiz-modal-overlay] {
+  transition: background-color 0.3s;
+  position: absolute;
+  inset: 0;
+}
+
+[data-rmiz-modal-overlay='hidden'] {
+  background-color: transparent;
+}
+
+[data-rmiz-modal-overlay='visible'] {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--background) / var(--tw-bg-opacity, 1));
+}
+
+[data-rmiz-modal-content] {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+[data-rmiz-modal]::backdrop {
+  display: none;
+}
+
+[data-rmiz-modal-img] {
+  cursor: zoom-out;
+  image-rendering: high-quality;
+  transform-origin: 0 0;
+  transition: transform 0.3s;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-rmiz-modal-overlay],
+  [data-rmiz-modal-img] {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/.pnpm/next@14.2.15_@babel+core@7.25.8_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./components/preview/styles.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_container__SmmsR {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+@media (min-width: 1400px) {
+    .styles_container__SmmsR {
+        max-width: 1400px;
+    }
+}
+.styles_prose__3ndPk {
+    color: var(--tw-prose-body);
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.styles_prose__3ndPk :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    color: var(--tw-prose-lead);
+}
+.styles_prose__3ndPk :where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    padding-inline-start: 1rem;
+    list-style-type: disc;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+.styles_prose__3ndPk :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.styles_prose__3ndPk :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    padding-inline-start: 0.375em;
+}
+.styles_prose__3ndPk :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    padding-inline-start: 0;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > ul > li p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > ul > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 1.25em;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > ul > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-bottom: 1.25em;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > ol > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 1.25em;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > ol > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-bottom: 1.25em;
+}
+.styles_prose__3ndPk :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.styles_prose__3ndPk :where(dl):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+.styles_prose__3ndPk :where(dt):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 600;
+    margin-top: 1.25em;
+}
+.styles_prose__3ndPk :where(dd):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0.5em;
+    padding-inline-start: 1.625em;
+}
+.styles_prose__3ndPk :where(hr):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-color: var(--tw-prose-hr);
+    border-top-width: 1px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.styles_prose__3ndPk :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+.styles_prose__3ndPk :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-bold);
+    font-weight: 600;
+}
+.styles_prose__3ndPk :where(a strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(blockquote strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(thead th strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(ol):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: decimal;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-inline-start: 1.625em;
+}
+.styles_prose__3ndPk :where(ol[type="A"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: upper-alpha;
+}
+.styles_prose__3ndPk :where(ol[type="a"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: lower-alpha;
+}
+.styles_prose__3ndPk :where(ol[type="A" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: upper-alpha;
+}
+.styles_prose__3ndPk :where(ol[type="a" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: lower-alpha;
+}
+.styles_prose__3ndPk :where(ol[type="I"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: upper-roman;
+}
+.styles_prose__3ndPk :where(ol[type="i"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: lower-roman;
+}
+.styles_prose__3ndPk :where(ol[type="I" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: upper-roman;
+}
+.styles_prose__3ndPk :where(ol[type="i" s]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: lower-roman;
+}
+.styles_prose__3ndPk :where(ol[type="1"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    list-style-type: decimal;
+}
+.styles_prose__3ndPk :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *))::marker {
+    font-weight: 400;
+    color: var(--tw-prose-counters);
+}
+.styles_prose__3ndPk :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *))::marker {
+    color: var(--tw-prose-bullets);
+}
+.styles_prose__3ndPk :where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    padding-inline-start: 1em;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--tw-prose-quotes);
+    border-inline-start-width: 0.25rem;
+    border-inline-start-color: var(--tw-prose-quote-borders);
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.styles_prose__3ndPk :where(blockquote p:first-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
+    content: open-quote;
+}
+.styles_prose__3ndPk :where(blockquote p:last-of-type):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+    content: close-quote;
+}
+.styles_prose__3ndPk :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 800;
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0.8888889em;
+    line-height: 1.1111111;
+}
+.styles_prose__3ndPk :where(h1 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-weight: 900;
+    color: inherit;
+}
+.styles_prose__3ndPk :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+    font-weight: 600;
+}
+.styles_prose__3ndPk :where(h2 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-weight: 800;
+    color: inherit;
+}
+.styles_prose__3ndPk :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+}
+.styles_prose__3ndPk :where(h3 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-weight: 700;
+    color: inherit;
+}
+.styles_prose__3ndPk :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+.styles_prose__3ndPk :where(h4 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-weight: 700;
+    color: inherit;
+}
+.styles_prose__3ndPk :where(hr + *):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+}
+.styles_prose__3ndPk :where(h2 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+}
+.styles_prose__3ndPk :where(h3 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+}
+.styles_prose__3ndPk :where(h4 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+}
+.styles_prose__3ndPk :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.styles_prose__3ndPk :where(picture):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.styles_prose__3ndPk :where(picture > img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.styles_prose__3ndPk :where(video):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.styles_prose__3ndPk :where(kbd):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-size: 0.875em;
+    border-radius: 0.3125rem;
+    padding-top: 0.1875em;
+    padding-inline-end: 0.375em;
+    padding-bottom: 0.1875em;
+    padding-inline-start: 0.375em;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--tw-prose-kbd);
+    box-shadow: 0 0 0 1px var(--tw-prose-kbd-shadows),0 3px 0 var(--tw-prose-kbd-shadows);
+}
+.styles_prose__3ndPk :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    padding: 3px;
+    border: solid 1px;
+    font-size: 13px;
+    border-color: hsl(var(--border) / 1);
+    border-radius: 5px;
+    font-weight: 400;
+    background: hsl(var(--muted) / 1);
+    color: var(--tw-prose-code);
+}
+.styles_prose__3ndPk :where(a code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(h1 code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(h2 code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+    font-size: 0.875em;
+}
+.styles_prose__3ndPk :where(h3 code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+    font-size: 0.9em;
+}
+.styles_prose__3ndPk :where(h4 code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(blockquote code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(thead th code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: inherit;
+}
+.styles_prose__3ndPk :where(table):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    font-size: 0.875em;
+    line-height: 1.7142857;
+    width: 100%;
+    table-layout: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--card) / var(--tw-bg-opacity));
+}
+.styles_prose__3ndPk :where(thead th):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 600;
+}
+.styles_prose__3ndPk :where(figure):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.styles_prose__3ndPk :where(figure > *):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.styles_prose__3ndPk :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-captions);
+    font-size: 0.875em;
+    line-height: 1.4285714;
+    margin-top: 0.8571429em;
+}
+.styles_prose__3ndPk :where(a:not([data-card])):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: var(--tw-prose-links);
+    transition: opacity 0.3s;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: hsl(var(--primary) / 1);
+}
+.styles_prose__3ndPk :where(a:not([data-card]):hover):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    opacity: 80%;
+}
+.styles_prose__3ndPk {
+    --tw-prose-body: hsl(var(--foreground) / 90%);
+    --tw-prose-headings: hsl(var(--foreground) / 1);
+    --tw-prose-lead: hsl(var(--foreground) / 1);
+    --tw-prose-links: hsl(var(--foreground) / 1);
+    --tw-prose-bold: hsl(var(--foreground) / 1);
+    --tw-prose-counters: hsl(var(--muted-foreground) / 1);
+    --tw-prose-bullets: hsl(var(--muted-foreground) / 1);
+    --tw-prose-hr: hsl(var(--border) / 1);
+    --tw-prose-quotes: hsl(var(--foreground) / 1);
+    --tw-prose-quote-borders: hsl(var(--border) / 1);
+    --tw-prose-captions: hsl(var(--foreground) / 1);
+    --tw-prose-code: hsl(var(--foreground) / 1);
+    --tw-prose-th-borders: hsl(var(--border) / 1);
+    --tw-prose-td-borders: hsl(var(--border) / 1);
+    --tw-prose-kbd: hsl(var(--foreground) / 1);
+    --tw-prose-kbd-shadows: hsl(var(--primary) / 50%);
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > :first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-top: 0;
+}
+.styles_prose__3ndPk :where(.styles_prose__3ndPk > :last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    margin-bottom: 0;
+}
+.styles_prose__3ndPk :where(th):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    text-align: start;
+    border-inline-start-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--muted) / var(--tw-bg-opacity));
+    padding: 0.625rem;
+}
+.styles_prose__3ndPk :where(th:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-inline-start-width: 0px;
+}
+.styles_prose__3ndPk :where(th:not(tr:last-child *), td:not(tr:last-child *)):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-bottom-width: 1px;
+}
+.styles_prose__3ndPk :where(td):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    text-align: start;
+    border-inline-start-width: 1px;
+    padding: 0.625rem;
+}
+.styles_prose__3ndPk :where(td:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-inline-start-width: 0px;
+}
+.styles_prose__3ndPk :where(tfoot th, tfoot td):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-top-width: 1px;
+    border-top-color: var(--tw-prose-th-borders);
+}
+.styles_prose__3ndPk :where(thead th, thead td):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    border-bottom-width: 1px;
+    border-bottom-color: var(--tw-prose-th-borders);
+}
+#styles_nd-sidebar__8fH_s {
+    --muted: 0deg 0% 89%;
+    --secondary: 0deg 0% 99%;
+    --muted-foreground: 0 0% 30%;
+}
+.styles_dark___yOos #styles_nd-sidebar__8fH_s {
+    --muted: 0deg 0% 16%;
+    --secondary: 0deg 0% 18%;
+    --muted-foreground: 0 0% 72%;
+}
+  .styles_preview__avcYR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 384px;
+    padding: 48px;
+    margin-top: 4px;
+    border-color: var(--border);
+    border-width: 1px;
+    border-radius: var(--radius-base);
+  }
+  .styles_preview__avcYR[data-with-codeblock="true"] {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  .styles_preview__avcYR[data-with-codeblock="true"] + figure {
+        margin-top: 0;
+        border-top-width: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
