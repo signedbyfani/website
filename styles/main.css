@@ -249,7 +249,8 @@
       @apply font-medium text-foreground;
     }
 
-    a, Link {
+    a,
+    link {
       @apply hover:text-gray-12;
     }
   }

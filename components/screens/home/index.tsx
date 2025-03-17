@@ -1,9 +1,9 @@
 "use client";
 
-import type { ImageProps } from "@/types/gallery";
 import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
+import type { ImageProps } from "@/types/gallery";
 
 import { ArrowUpRightIcon, Check, Copy } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -71,7 +71,10 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <div className="flex flex-col">
-          <p>More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological experiences.</p>
+          <p>
+            More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological
+            experiences.
+          </p>
           <div className="flex flex-row gap-4 pt-6">
             <button
               type="button"

@@ -21,7 +21,6 @@ export const Layout = ({ post, route }: Props) => {
     return <div>{formatter.date(new Date(post.time.created))}</div>;
   };
 
-
   return (
     <React.Fragment>
       <div className="flex flex-col">
@@ -33,14 +32,7 @@ export const Layout = ({ post, route }: Props) => {
         </div>
         {post.media?.thumbnail && (
           <div className="mt-4">
-            <Image
-              src={post.media?.thumbnail}
-              alt={post.title}
-              width={1600}
-              height={900}
-              layout="responsive"
-              className="rounded-lg"
-            />
+            <Image src={post.media?.thumbnail} alt={post.title} width={1600} height={900} layout="responsive" className="rounded-lg" />
           </div>
         )}
       </div>

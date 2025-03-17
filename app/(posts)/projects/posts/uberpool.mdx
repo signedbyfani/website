@@ -2,18 +2,20 @@
 title: "Uber Dynamic Carpooling"
 time:
   created: "8 March 2025"
-  updated: "8 March 2025"
+  updated: "2025-03-17T19:27:07.890Z"
 summary: Enhancing ride sharing experience with Dyanmic Carpooling
 media:
   thumbnail: "/uberpool/cover-small.png"
 ---
 
 # Overview
+
 UberPool is great for efficiency but has a major drawback—riders must commit to carpooling before booking, which might not always align with their preferences.
 
 This case study presents a new feature: **Dynamic Carpooling**—a flexible way for users to choose carpooling after their ride has started. This enhances ride efficiency while keeping user preferences in mind.
 
-# The Problem 
+# The Problem
+
 Despite UberPool’s existence, many users hesitate to opt in beforehand because:
 
 - They worry about potential delays due to additional pickups
@@ -22,22 +24,53 @@ Despite UberPool’s existence, many users hesitate to opt in beforehand because
 
 A more dynamic carpooling option allows flexibility, letting riders decide in real time
 
-
 # Design Solution
+
 ## User Flow
 
-<Image src="/uberpool/screen1.png" alt="Booking Phase" caption="Booking Phase" width={1600} height={900}/>
-Users toggle “Open to Carpool?” before booking. No impact on their initial fare or ETA.
+<Image
+  src="/uberpool/screen1.png"
+  alt="Booking Phase"
+  caption="Booking Phase"
+  width={1600}
+  height={900}
+/>
+Users toggle “Open to Carpool?” before booking. No impact on their initial fare
+or ETA.
 
-<Image src="/uberpool/screen2.png" alt="Screen 2" caption="Ride accepted and in progress" width={1600} height={900}/>
-The ride begins as a private trip. If another rider enables carpooling and their route aligns, the system finds a match
+<Image
+  src="/uberpool/screen2.png"
+  alt="Screen 2"
+  caption="Ride accepted and in progress"
+  width={1600}
+  height={900}
+/>
+The ride begins as a private trip. If another rider enables carpooling and their
+route aligns, the system finds a match
 
-<Image src="/uberpool/screen3.png" alt="Screen 3" caption="Lock Screen Notification" width={1600} height={900}/>
-A push notification appears when there is a match. Riders can tap to open the Uber app and review details
+<Image
+  src="/uberpool/screen3.png"
+  alt="Screen 3"
+  caption="Lock Screen Notification"
+  width={1600}
+  height={900}
+/>
+A push notification appears when there is a match. Riders can tap to open the
+Uber app and review details
 
-<Image src="/uberpool/screen4.png" alt="Screen 4" caption="Uber App – Ride Share Request" width={1600} height={900}/>A popup prompts that someone is looking to share the ride. New fare after sharing is displayed. Accept and Decline buttons for quick decision making
+<Image
+  src="/uberpool/screen4.png"
+  alt="Screen 4"
+  caption="Uber App – Ride Share Request"
+  width={1600}
+  height={900}
+/>
+A popup prompts that someone is looking to share the ride. New fare after
+sharing is displayed. Accept and Decline buttons for quick decision making
 
 # Impact & Future Scope
+
 Despite UberPool’s existence, many users hesitate to opt in beforehand because:
+
 - **Better Ride Utilization** - Fewer empty seats mean more sustainable travel
 - **Cost Savings** - Riders get the flexibility to share rides when it’s convenient

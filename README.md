@@ -1,1 +1,1 @@
-Work in progress - Minimal Portfolio Website
+My Portfolio Website
