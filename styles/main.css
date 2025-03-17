@@ -248,6 +248,10 @@
     b {
       @apply font-medium text-foreground;
     }
+
+    a, Link {
+      @apply hover:text-gray-12;
+    }
   }
 
   /* 

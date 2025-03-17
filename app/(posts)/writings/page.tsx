@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <React.Fragment>
       <FadeIn.Item>
-        <Posts category="projects" />
+        <Posts category="writings" />
       </FadeIn.Item>
     </React.Fragment>
   );

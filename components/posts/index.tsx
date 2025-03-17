@@ -50,7 +50,7 @@ export const Posts = ({ category }: PostProps) => {
         <section>
           <NextViewTransition href={`/${category}`} className="flex justify-between">
             <h2 className="mb-2 w-full border-border border-b py-2 capitalize">
-              Projects ({projects.length})
+              Featured Projects ({projects.length})
             </h2>
           </NextViewTransition>
           {projects.map((post) => (

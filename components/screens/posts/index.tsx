@@ -17,10 +17,6 @@ interface Props {
 export const Layout = ({ post, route }: Props) => {
   const posts = getPosts(route);
 
-  const Seperator = () => {
-    return <div className="hidden md:block">⋅</div>;
-  };
-
   const PublishedTime = () => {
     return <div>{formatter.date(new Date(post.time.created))}</div>;
   };
@@ -32,7 +28,7 @@ export const Layout = ({ post, route }: Props) => {
         <div>
           <h1 className="mb-2 font-semibold text-xl">{post.title}</h1>
         </div>
-        <div className="mt-1 flex-wrap gap-0 text-muted text-small md:flex md:gap-2 ">
+        <div className="mt-1 flex-wrap gap-0 text-muted tabular-nums">
           <PublishedTime />
         </div>
         {post.media?.thumbnail && (
