@@ -6,15 +6,7 @@ type Parameters = {
   title?: string;
 };
 
-/*
- * To assist with generating dynamic Open Graph (OG) images, you can use the Vercel @vercel/og library to compute and generate social card images using Vercel Edge Functions.
- * @see: https://vercel.com/docs/functions/og-image-generation
- *
- * You can use the following code sample to explore using parameters and different content types with next/og.
- * @see: https://vercel.com/guides/dynamic-text-as-image
- *
- * For this example we are going to generate a simple social card image with a dynamic title.
- */
+
 export async function GET(request: Request) {
   try {
     /*
