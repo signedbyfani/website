@@ -1,12 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
   "/api/images/route": "app/api/images/route.js",
   "/api/posts/route": "app/api/posts/route.js",
-  "/page": "app/page.js",
-  "/icon/route": "app/icon/route.js",
-  "/(posts)/projects/page": "app/(posts)/projects/page.js",
-  "/(posts)/writings/page": "app/(posts)/writings/page.js",
-  "/(posts)/projects/[slug]/page": "app/(posts)/projects/[slug]/page.js",
   "/(posts)/writings/[slug]/page": "app/(posts)/writings/[slug]/page.js",
-  "/api/og/route": "app/api/og/route.js"
+  "/(posts)/projects/[slug]/page": "app/(posts)/projects/[slug]/page.js"
 }

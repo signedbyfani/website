@@ -71,7 +71,7 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <div className="flex flex-col">
-          <p>
+          <p className="font-medium text-gray-12 text-lg tracking-tight">
             More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological
             experiences.
           </p>

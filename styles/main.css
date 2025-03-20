@@ -73,10 +73,7 @@
     --moz-osx-font-smoothing: grayscale;
 
     font-family: Inter, sans-serif;
-    font-feature-settings: "ss07" 1, "ss08" 1, "tnum" 1, "cv10" 1, "cv05" 1, "cv06" 1, "calt" 1;
-    font-variant-ligatures: common-ligatures;
     text-wrap: pretty;
-    text-rendering: optimizelegibility;
   }
 
   *::selection {
@@ -104,7 +101,7 @@
     }
 
     p {
-      @apply text-muted2;
+      @apply text-muted2 font-medium;
     }
 
     strong,

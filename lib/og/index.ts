@@ -1,27 +1,36 @@
 import type { Metadata } from "next/types";
 
 export const OpenGraph: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL("https://www.fanindra.xyz/"),
   title: {
     default: "Fanindra Maharana",
-    template: "%s",
+    template: "%s | Fanindra Maharana",
   },
-  description: "...",
-  keywords: ["Design", "Development", "Engineering"],
+  description: "Fanindra Maharana is an Interaction Designer based out of India. Currently pursuing M. Des at JKLU, Jaipur.",
+  keywords: [
+    "Interaction Design",
+    "UI/UX",
+    "User Experience",
+    "Product Design",
+    "Web Development",
+    "Fanindra Maharana",
+    "Design Portfolio"
+  ],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    url: "https://www.fanindra.xyz/",
     title: "Fanindra Maharana",
-    description: "...",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/og`],
+    description: "Fanindra Maharana is an Interaction Designer based out of India. Currently pursuing M. Des at JKLU, Jaipur.",
+    images: ["https://www.fanindra.xyz/og.png"],
     siteName: "Fanindra Maharana",
   },
   twitter: {
     card: "summary_large_image",
     title: "Fanindra Maharana",
-    description: "...",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/og`],
+    description: "Fanindra Maharana is an Interaction Designer based out of India. Currently pursuing M. Des at JKLU, Jaipur.",
+    images: ["https://www.fanindra.xyz/og.png"],
+    creator: "@fanindraaa", // Replace with actual Twitter handle
   },
   robots: {
     index: true,
@@ -33,5 +42,8 @@ export const OpenGraph: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  alternates: {
+    canonical: "https://www.fanindra.xyz/",
   },
 };

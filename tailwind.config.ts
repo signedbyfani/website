@@ -165,8 +165,8 @@ const config: Config = {
           fontSize: "13px",
         },
         ".text-default": {
-          fontSize: "15px",
-          lineHeight: "24px",
+          fontSize: "16px",
+          lineHeight: "27px",
           letterSpacing: "-0.09px",
         },
       });
