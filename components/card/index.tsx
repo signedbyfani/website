@@ -26,7 +26,7 @@ export const Card = ({
       <img
         src={imageSrc}
         alt={title}
-        className="aspect-[4/3] w-full rounded-lg object-cover"
+        className="aspect-[16/9] w-full rounded-lg object-cover"
       />
     </div>
 
