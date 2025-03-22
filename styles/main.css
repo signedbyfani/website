@@ -19,10 +19,6 @@
 @tailwind utilities;
 
 @layer base {
-  /*
-  * We are using the Radix UI Colors package to generate a set of color variables that can be used in the project.
-  * @see: https://colors.radix-ui.com/
-  */
 
   @font-face {
     font-family: Inter;

@@ -6,8 +6,8 @@ const container = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.2,
+      staggerChildren: 0.1, // Slightly slower stagger for a lazy feel
+      delayChildren: 0.3, // Increased delay for lazy animation effect
     },
   },
 };
@@ -15,19 +15,15 @@ const container = {
 const item = {
   hidden: {
     opacity: 0,
-    y: 16,
-    filter: "blur(4px)",
+    y: 40, // Increased initial y-value for a more pronounced slide-in effect
   },
   show: {
     opacity: 1,
-    scale: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: {
-      type: "spring",
-      stiffness: 150,
-      damping: 19,
-      mass: 1.2,
+      type: "tween", // Tween for a smoother lazy feel
+      ease: "easeOut",
+      duration: 0.8, // Slower animation for laziness
     },
   },
 };

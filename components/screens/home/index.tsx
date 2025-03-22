@@ -1,19 +1,13 @@
 "use client";
-
 import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
-import type { ImageProps } from "@/types/gallery";
-
 import { ArrowUpRightIcon, Check, Copy } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 
 export default function Home() {
-  const [images, setImages] = useState<ImageProps[]>([]);
-  const [isLoadingImages, setIsLoadingImages] = useState(true);
-  const [isLoadingPosts, setIsLoadingPosts] = useState(true);
   const [copied, setCopied] = useState(false);
   const [copyText, setCopyText] = useState("imfanindra@gmail.com");
 
@@ -26,23 +20,6 @@ export default function Home() {
       setCopyText("imfanindra@gmail.com");
     }, 2000);
   };
-
-  useEffect(() => {
-    async function fetchImages() {
-      try {
-        const response = await fetch("/api/images");
-        if (!response.ok) throw new Error("Failed to fetch images");
-        const data = await response.json();
-        setImages(data);
-      } catch (error) {
-        console.error("Error fetching images:", error);
-      } finally {
-        setIsLoadingImages(false);
-      }
-    }
-
-    fetchImages();
-  }, []);
 
   return (
     <FadeIn.Container>
