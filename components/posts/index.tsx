@@ -37,7 +37,7 @@ export const Posts = ({ category }: PostProps) => {
   if (posts.length === 0) return null;
 
   const projects = posts.filter((post) => category === "projects");
-  const blogs = posts.filter((post) => category !== "writings");
+  const blogs = posts.filter((post) => category !== "projects");
 
   return (
     <div className="mt-6 flex flex-col">
