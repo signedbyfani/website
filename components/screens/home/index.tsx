@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <FadeIn.Container>
       <FadeIn.Item>
-        <div className="flex justify-between">
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-between">
           <div className="flex w-full flex-col">
             <h1 className="text-xl">Fanindra Maharana</h1>
             <h2 className="font-normal text-muted">Interaction Designer</h2>
@@ -39,6 +39,12 @@ export default function Home() {
             <a href="https://www.behance.net/imfanindra" target="_blank" rel="noreferrer">
               <div className="flex flex-row items-center justify-center gap-1 text-muted2 text-sm hover:text-foreground hover:underline">
                 Behance
+                <ArrowUpRightIcon className="h-4 w-4" />
+              </div>
+            </a>
+            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <div className="flex flex-row items-center justify-center gap-1 text-muted2 text-sm hover:text-foreground hover:underline">
+                CV
                 <ArrowUpRightIcon className="h-4 w-4" />
               </div>
             </a>
