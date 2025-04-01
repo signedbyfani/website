@@ -430,3 +430,18 @@
 .group:hover .card-image-blur {
   opacity: 0.7;
 }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}

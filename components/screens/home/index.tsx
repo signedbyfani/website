@@ -26,8 +26,8 @@ export default function Home() {
       <FadeIn.Item>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-between">
           <div className="flex w-full flex-col">
-            <h1 className="text-xl">Fanindra Maharana</h1>
-            <h2 className="font-normal text-muted">Interaction Designer</h2>
+          <h1 className="text-xl text-focus-in">Fanindra Maharana</h1>
+          <h2 className="font-normal text-muted text-focus-in">Interaction Designer</h2>
           </div>
           <div className="flex flex-row gap-4">
             <a href="https://www.linkedin.com/in/fanindra-m/" target="_blank" rel="noreferrer">
@@ -60,7 +60,7 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <div className="flex flex-col">
-          <p className="font-medium text-gray-12 text-lg tracking-tight">
+          <p className="font-medium text-gray-12 text-lg tracking-tight text-focus-in">
             More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological
             experiences.
           </p>
