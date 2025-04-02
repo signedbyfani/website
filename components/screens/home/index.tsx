@@ -48,7 +48,7 @@ export default function Home() {
                 <ArrowUpRightIcon className="h-4 w-4" />
               </div>
             </a>
-            <a href="https://designs.fanindra.xyz/" target="_blank" rel="noreferrer">
+            <a href="https://layers.to/fanindraaa" target="_blank" rel="noreferrer">
               <div className="flex flex-row items-center justify-center gap-1 text-muted2 text-sm hover:text-foreground hover:underline">
                 Explore
                 <ArrowUpRightIcon className="h-4 w-4" />

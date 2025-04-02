@@ -1,4 +1,8 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/icon/[[...__metadata_id__]]/route": "app/icon/[[...__metadata_id__]]/route.js",
   "/page": "app/page.js",
-  "/api/posts/route": "app/api/posts/route.js"
+  "/api/posts/route": "app/api/posts/route.js",
+  "/(posts)/projects/[slug]/page": "app/(posts)/projects/[slug]/page.js",
+  "/(posts)/writings/[slug]/page": "app/(posts)/writings/[slug]/page.js"
 }
