@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
 import { ArrowUpRightIcon, Check, Copy } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useState } from "react";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
@@ -10,6 +11,7 @@ const Spacer = () => <div style={{ marginTop: "24px" }} />;
 export default function Home() {
   const [copied, setCopied] = useState(false);
   const [copyText, setCopyText] = useState("imfanindra@gmail.com");
+  const { theme } = useTheme();
 
   const handleCopyEmail = async () => {
     await navigator.clipboard.writeText("imfanindra@gmail.com");
