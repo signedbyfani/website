@@ -5,7 +5,7 @@ import Link from "next/link";
 export function GoBack() {
   return (
     <Link href="/">
-      <button
+      <button type="button"
         className="
           relative
           px-4
