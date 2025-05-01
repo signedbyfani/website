@@ -42,9 +42,9 @@ export const Posts = ({ category }: PostProps) => {
   return (
     <div className="mt-6 flex flex-col">
       {projects.length > 0 && (
-        <section>
+        <section className="mb-12">
           <NextViewTransition href={`/${category}`} className="flex justify-between">
-            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">Featured Projects ({projects.length})</h2>
+            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">Recent Projects</h2>
           </NextViewTransition>
           {projects.map((post) => (
             <React.Fragment key={post.slug}>
@@ -64,7 +64,7 @@ export const Posts = ({ category }: PostProps) => {
       {blogs.length > 0 && (
         <section>
           <NextViewTransition href={`/${category}`} className="flex justify-between">
-            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">Blog Posts ({blogs.length})</h2>
+            <h2 className="mb-2 w-full border-border border-b py-2 capitalize">My Thoughts and Opinions</h2>
           </NextViewTransition>
           {blogs.map((post) => (
             <React.Fragment key={post.slug}>

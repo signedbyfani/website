@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import React from "react";
 
 interface VimeoProps {
   videoId: string;
@@ -8,8 +8,22 @@ interface VimeoProps {
 }
 
 export default function Vimeo({ videoId, caption }: VimeoProps) {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="mt-4 mb-16 flex cursor-pointer flex-col justify-end gap-2">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-large border border-border bg-[#f9f9f9] shadow-sm" />
+      </div>
+    );
+  }
+
   return (
-    <motion.div className="mt-4 mb-16 flex cursor-pointer flex-col justify-end gap-2">
+    <div className="mt-4 mb-16 flex cursor-pointer flex-col justify-end gap-2">
       <div className="relative aspect-[4/3] w-full overflow-hidden rounded-large border border-border bg-[#f9f9f9] shadow-sm">
         <iframe
           title={caption || "Vimeo video player"}
@@ -23,6 +37,6 @@ export default function Vimeo({ videoId, caption }: VimeoProps) {
         </div>
       </div>
       {caption && <sub className="pt-2 text-center">{caption}</sub>}
-    </motion.div>
+    </div>
   );
 }

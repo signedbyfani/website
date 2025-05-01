@@ -1,16 +1,10 @@
 @import url("@radix-ui/colors/gray.css");
 @import url("@radix-ui/colors/olive.css");
 @import url("@radix-ui/colors/gray-alpha.css");
-@import url("@radix-ui/colors/gray-dark.css");
-@import url("@radix-ui/colors/gray-dark-alpha.css");
 @import url("@radix-ui/colors/pink.css");
 @import url("@radix-ui/colors/pink-alpha.css");
-@import url("@radix-ui/colors/pink-dark.css");
-@import url("@radix-ui/colors/pink-dark-alpha.css");
 @import url("@radix-ui/colors/yellow.css");
 @import url("@radix-ui/colors/yellow-alpha.css");
-@import url("@radix-ui/colors/yellow-dark.css");
-@import url("@radix-ui/colors/yellow-dark-alpha.css");
 @import url("@radix-ui/colors/black-alpha.css");
 @import url("@radix-ui/colors/white-alpha.css");
 
@@ -21,10 +15,9 @@
 @layer base {
 
   @font-face {
-    font-family: Inter;
+    font-family: Geist;
     font-weight: 100 900;
-    font-feature-settings: "ss07" 1, "ss08" 1, "tnum" 1, "cv10" 1, "cv05" 1, "cv06" 1, "calt" 1;
-    src: url("/assets/inter/InterVariable.woff2") format("woff2");
+    src: url("/assets/Geist.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -68,7 +61,7 @@
     --webkit-font-smoothing: antialiased;
     --moz-osx-font-smoothing: grayscale;
 
-    font-family: Inter, sans-serif;
+    font-family: Geist, sans-serif;
     text-wrap: pretty;
   }
 
@@ -97,12 +90,12 @@
     }
 
     p {
-      @apply text-muted2 font-medium;
+      @apply text-muted2;
     }
 
     strong,
     b {
-      @apply font-medium text-foreground;
+      @apply font-semibold text-foreground;
     }
 
     sub,
@@ -239,7 +232,7 @@
 
     strong,
     b {
-      @apply font-medium text-foreground;
+      @apply font-semibold text-foreground;
     }
 
     a,
@@ -248,38 +241,14 @@
     }
   }
 
-  /* 
-  * We are using rehypye-pretty to style the code blocks in the project.
-  * rehype-pretty-code is a Rehype plugin powered by the shiki syntax highlighter that provides beautiful code blocks for Markdown or MDX. 
-  * It works on both the server at build-time (avoiding runtime syntax highlighting) and on the client for dynamic highlighting.
-  * @see: https://rehype-pretty.pages.dev/
-  */
-
-  /* 
-  * Here we are setting up the styles needed to enable theme-aware code blocks.
-  * @see: https://rehype-pretty.pages.dev/#multiple-themes-dark-and-light-mode
-  */
-
   html {
     code[data-theme*=" "],
     code[data-theme*=" "] span {
       color: var(--shiki-light);
       background-color: var(--shiki-light-bg);
     }
-
-    &.dark {
-      code[data-theme*=" "],
-      code[data-theme*=" "] span {
-        color: var(--shiki-dark);
-        background-color: var(--shiki-dark-bg);
-      }
-    }
   }
 
-  /* 
-  * Here we are setting up the styles needed to enable line numbers in code blocks.
-  * @see: https://rehype-pretty.pages.dev/#line-numbers
-  */
 
   html {
     code[data-line-numbers] {
@@ -344,25 +313,6 @@
   }
 }
 
-/* :root.dark {
-  --background: var(--gray-1);
-  --foreground: var(--gray-12);
-  --muted: var(--gray-3);
-  --muted-foreground: var(--gray-11);
-  --popover: var(--gray-1);
-  --popover-foreground: var(--gray-12);
-  --card: var(--gray-1);
-  --card-foreground: var(--gray-12);
-  --border: var(--gray-3);
-  --primary: var(--gray-12);
-  --primary-foreground: var(--gray-1);
-  --secondary: var(--gray-2);
-  --secondary-foreground: var(--gray-12);
-  --accent: var(--gray-3);
-  --accent-foreground: var(--gray-12);
-  --ring: var(--gray-6);
-} */
-
 [data-rmiz-modal-overlay] {
   background-color: var(--bg) !important; /* Dark overlay regardless of theme */
 }
@@ -412,8 +362,6 @@
     scale: 1.4;
   }
 }
-
-/* Add these styles to handle the card hover effects */
 
 .card-image-container {
   position: relative;

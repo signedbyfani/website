@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-between">
           <div className="flex w-full flex-col">
           <h1 className="text-xl text-focus-in">Fanindra Maharana</h1>
-          <h2 className="font-normal text-muted text-focus-in">Interaction Designer</h2>
+          <h2 className="font-normal text-neutral-500 text-focus-in">Interaction Designer</h2>
           </div>
           <div className="flex flex-row gap-4">
             <a href="https://www.linkedin.com/in/fanindra-m/" target="_blank" rel="noreferrer">
