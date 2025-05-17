@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const category = searchParams.get("category") || "projects";
 
   try {
-    const posts = getPosts(category);
+    const posts = await getPosts(category); // ✅ Await the async call
     return NextResponse.json(posts);
   } catch (error) {
     console.error("Failed to fetch posts:", error);

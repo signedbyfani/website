@@ -49,12 +49,7 @@ export const Posts = ({ category }: PostProps) => {
           {projects.map((post) => (
             <React.Fragment key={post.slug}>
               <NextViewTransition href={`/${category}/${post.slug}`} className="flex w-full justify-between py-8">
-                <Card
-                  title={post.title}
-                  body={post.summary}
-                  imageSrc={post.media?.thumbnail || "/default-thumbnail.png"}
-                  cardClassName="w-full rounded-large"
-                />
+                <Card title={post.title} body={post.summary} imageSrc={post.media?.thumbnail || "/default-thumbnail.png"} cardClassName="w-full" />
               </NextViewTransition>
             </React.Fragment>
           ))}

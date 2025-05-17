@@ -15,6 +15,4 @@ export type Post = {
     video?: string;
     audio?: string;
   };
-
-
 };

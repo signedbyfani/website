@@ -1,7 +1,9 @@
 "use client";
+
 import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
+
 import { ArrowUpRightIcon, Check, Copy } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useState } from "react";
@@ -28,8 +30,8 @@ export default function Home() {
       <FadeIn.Item>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-between">
           <div className="flex w-full flex-col">
-          <h1 className="text-xl text-focus-in">Fanindra Maharana</h1>
-          <h2 className="font-normal text-neutral-500 text-focus-in">Interaction Designer</h2>
+            <h1 className="text-focus-in text-xl">Fanindra Maharana</h1>
+            <h2 className="font-normal text-focus-in text-neutral-500">Interaction Designer</h2>
           </div>
           <div className="flex flex-row gap-4">
             <a href="https://www.linkedin.com/in/fanindra-m/" target="_blank" rel="noreferrer">
@@ -62,7 +64,7 @@ export default function Home() {
       <Spacer />
       <FadeIn.Item>
         <div className="flex flex-col">
-          <p className="font-medium text-gray-12 text-lg tracking-tight text-focus-in">
+          <p className="font-medium text-focus-in text-gray-12 text-lg tracking-tight">
             More than just a pixel pusher — I craft experiences that resonate. Designing for people, shaping their digital, physical, and psychological
             experiences.
           </p>

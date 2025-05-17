@@ -1,5 +1,7 @@
 "use client";
-import ImageProps from "next/image";
+
+import type { ImageProps } from "next/image";
+
 import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import React from "react";
 
@@ -22,7 +24,7 @@ export default function MDXImage({ caption, alt, ...props }: MDXImageProps) {
 
   return (
     <div className="mt-4 mb-16 flex flex-col justify-end gap-2">
-      <div className="relative w-full overflow-hidden rounded-large">
+      <div className="relative w-full overflow-hidden">
         <ImageZoom
           {...props}
           alt={alt}
@@ -34,11 +36,7 @@ export default function MDXImage({ caption, alt, ...props }: MDXImageProps) {
           }}
         />
       </div>
-      {caption && (
-        <sub className="pt-2">
-          {caption}
-        </sub>
-      )}
+      {caption && <sub className="pt-2">{caption}</sub>}
     </div>
   );
 }

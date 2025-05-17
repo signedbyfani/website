@@ -6,7 +6,6 @@ type Parameters = {
   title?: string;
 };
 
-
 export async function GET(request: Request) {
   try {
     /*

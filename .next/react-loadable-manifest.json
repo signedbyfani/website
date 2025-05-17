@@ -1,32 +1,33 @@
 {
-  "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../algolia-NTWLS6J3.js": {
-    "id": "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../algolia-NTWLS6J3.js",
+  "node_modules/.pnpm/fumadocs-core@14.7.7_@types+react@18.3.20_next@15.3.1_react-dom@19.1.0_react@19.1.0__re_e1a09f9d58e25af2a3c92488512fc843/node_modules/fumadocs-core/dist/search/client.js -> ../algolia-NTWLS6J3.js": {
+    "id": 2419,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_fumadocs-core_14_5_4__types_react_18_3_11_next_15_3_1__b-a919d9.js"
+      "static/chunks/419.72fd0854ef9c5655.js"
     ]
   },
-  "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../fetch-4K7QOPFM.js": {
-    "id": "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../fetch-4K7QOPFM.js",
+  "node_modules/.pnpm/fumadocs-core@14.7.7_@types+react@18.3.20_next@15.3.1_react-dom@19.1.0_react@19.1.0__re_e1a09f9d58e25af2a3c92488512fc843/node_modules/fumadocs-core/dist/search/client.js -> ../fetch-4K7QOPFM.js": {
+    "id": 426,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_fumadocs-core_14_5_4__types_react_18_3_11_next_15_3_1__b-19cdb1.js"
+      "static/chunks/426.77bc8ad9f4d3376c.js"
     ]
   },
-  "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../orama-cloud-QNHGN6SO.js": {
-    "id": "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../orama-cloud-QNHGN6SO.js",
+  "node_modules/.pnpm/fumadocs-core@14.7.7_@types+react@18.3.20_next@15.3.1_react-dom@19.1.0_react@19.1.0__re_e1a09f9d58e25af2a3c92488512fc843/node_modules/fumadocs-core/dist/search/client.js -> ../orama-cloud-HAZVD2ZO.js": {
+    "id": 3341,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_fumadocs-core_14_5_4__types_react_18_3_11_next_15_3_1__b-8e6106.js"
+      "static/chunks/341.0835e3555c6ddae0.js"
     ]
   },
-  "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../static-5GPJ7RUY.js": {
-    "id": "node_modules/.pnpm/fumadocs-core@14.5.4_@types+react@18.3.11_next@15.3.1_@babel+core@7.25.8_react-dom@19.1_054418be8c2e931950f81f56aef43594/node_modules/fumadocs-core/dist/search/client.js -> ../static-5GPJ7RUY.js",
+  "node_modules/.pnpm/fumadocs-core@14.7.7_@types+react@18.3.20_next@15.3.1_react-dom@19.1.0_react@19.1.0__re_e1a09f9d58e25af2a3c92488512fc843/node_modules/fumadocs-core/dist/search/client.js -> ../static-KPGOHAZ2.js": {
+    "id": 5476,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_fumadocs-core_14_5_4__types_react_18_3_11_next_15_3_1__b-aa3d8a.js"
+      "static/chunks/476.be82ed40edd2f07d.js"
     ]
   },
-  "node_modules/.pnpm/fumadocs-ui@14.5.4_@types+react-dom@18.3.1_@types+react@18.3.11_next@15.3.1_@babel+core_5093b8b98f59a6ed2c68490262da807f/node_modules/fumadocs-ui/dist/provider.js -> ./components/dialog/search-default": {
-    "id": "node_modules/.pnpm/fumadocs-ui@14.5.4_@types+react-dom@18.3.1_@types+react@18.3.11_next@15.3.1_@babel+core_5093b8b98f59a6ed2c68490262da807f/node_modules/fumadocs-ui/dist/provider.js -> ./components/dialog/search-default",
+  "node_modules/.pnpm/fumadocs-ui@14.7.7_@types+react-dom@18.3.7_@types+react@18.3.20__@types+react@18.3.20_f_f23e6a729276393d708cb1c52f33a44c/node_modules/fumadocs-ui/dist/provider.js -> ./components/dialog/search-default": {
+    "id": 3973,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_pnpm_fumadocs-ui_14_5_4__types_react-dom_18_3_1__types_react_-5aeddc.js"
+      "static/chunks/794-32848a2e244061f0.js",
+      "static/chunks/973.14ed2289cbb1c49d.js"
     ]
   }
 }

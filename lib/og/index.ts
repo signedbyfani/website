@@ -7,15 +7,7 @@ export const OpenGraph: Metadata = {
     template: "%s | Fanindra Maharana",
   },
   description: "Fanindra Maharana is an Interaction Designer based out of India. Currently pursuing M. Des at JKLU, Jaipur.",
-  keywords: [
-    "Interaction Design",
-    "UI/UX",
-    "User Experience",
-    "Product Design",
-    "Web Development",
-    "Fanindra Maharana",
-    "Design Portfolio"
-  ],
+  keywords: ["Interaction Design", "UI/UX", "User Experience", "Product Design", "Web Development", "Fanindra Maharana", "Design Portfolio"],
   openGraph: {
     type: "website",
     locale: "en_US",

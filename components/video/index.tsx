@@ -1,6 +1,7 @@
 "use client";
 
 import type { DetailedHTMLProps, VideoHTMLAttributes } from "react";
+
 import React from "react";
 
 interface MDXVideoProps extends DetailedHTMLProps<VideoHTMLAttributes<HTMLVideoElement>, HTMLVideoElement> {

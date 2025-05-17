@@ -24,32 +24,25 @@ export const Layout = ({ post, route }: Props) => {
 
   return (
     <FadeIn.Container>
-        <React.Fragment>
-          <div className="flex flex-col">
-            <div>
-              <h1 className="mb-2 font-semibold text-xl">{post.title}</h1>
-            </div>
-            <div className="mt-1 flex-wrap gap-0 text-muted tabular-nums">
-              <PublishedTime />
-            </div>
-            {post.media?.thumbnail && (
-              <div className="mt-4">
-                <Image
-                  src={post.media?.thumbnail}
-                  alt={post.title}
-                  width={1600}
-                  height={900}
-                  layout="responsive"
-                  className="rounded-lg"
-                />
-              </div>
-            )}
+      <React.Fragment>
+        <div className="flex flex-col">
+          <div>
+            <h1 className="mb-2 font-semibold text-xl">{post.title}</h1>
           </div>
+          <div className="mt-1 flex-wrap gap-0 text-muted tabular-nums">
+            <PublishedTime />
+          </div>
+          {post.media?.thumbnail && (
+            <div className="mt-4">
+              <Image src={post.media?.thumbnail} alt={post.title} width={1600} height={900} layout="responsive" />
+            </div>
+          )}
+        </div>
 
-          <MDX source={post.content} />
-          <PostNavigation posts={posts} />
-          <TableOfContents />
-        </React.Fragment>{" "}
+        <MDX source={post.content} />
+        <PostNavigation posts={posts} />
+        <TableOfContents />
+      </React.Fragment>{" "}
     </FadeIn.Container>
   );
 };

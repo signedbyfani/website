@@ -13,7 +13,6 @@
 @tailwind utilities;
 
 @layer base {
-
   @font-face {
     font-family: Geist;
     font-weight: 100 900;
@@ -100,7 +99,7 @@
 
     sub,
     sup {
-      @apply text-muted;
+      @apply text-neutral-400;
     }
 
     sub {
@@ -249,7 +248,6 @@
     }
   }
 
-
   html {
     code[data-line-numbers] {
       counter-reset: line;
@@ -287,11 +285,6 @@
       box-shadow: 0 0 0 1px var(--kbd-border);
     }
   }
-
-  /* 
-  * Here we are just some additional styles to make the code blocks look better.
-  * @see: https://rehype-pretty.pages.dev/#styles
-  */
 
   * {
     pre {
@@ -384,6 +377,7 @@
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     filter: blur(0);
     opacity: 1;
@@ -391,5 +385,5 @@
 }
 
 .text-focus-in {
-  animation: text-focus-in 750ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 750ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }

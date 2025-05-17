@@ -1,4 +1,4 @@
-import type { Post } from "@/types";
+import type { Metadata } from "next";
 
 import { Layout } from "@/components/screens/posts";
 import { getPosts } from "@/lib/mdx";
@@ -8,22 +8,25 @@ import { notFound } from "next/navigation";
 
 const route = "writings";
 
-const Posts = getPosts(route);
-
-interface PageProps {
-  params: Post;
-}
+export type ParamsType = Promise<{ slug: string }>;
 
 export async function generateStaticParams() {
+  const Posts = await getPosts(route);
   return Posts.map((post) => ({
-    slug: `${post.slug}`,
+    slug: post.slug,
   }));
 }
 
-export async function generateMetadata({ params }: PageProps) {
-  const awaitedParams = await params;
-  const post = Posts.find((post: { slug: string }) => post.slug === awaitedParams.slug);
-  const title = post ? post.title : "";
+// ✅ Generate metadata
+export async function generateMetadata({
+  params,
+}: {
+  params: ParamsType;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const Posts = await getPosts(route);
+  const post = Posts.find((post) => post.slug === slug);
+  const title = post?.title ?? "";
   const image = `${process.env.NEXT_PUBLIC_SITE_URL}api/og?title=${encodeURIComponent(title)}`;
 
   return {
@@ -39,9 +42,11 @@ export async function generateMetadata({ params }: PageProps) {
   };
 }
 
-export default async function Page({ params }: PageProps) {
-  const awaitedParams = await params;
-  const post = Posts.find((post: { slug: string }) => post.slug === awaitedParams.slug);
+// ✅ Page component
+export default async function Page({ params }: { params: ParamsType }) {
+  const { slug } = await params;
+  const Posts = await getPosts(route);
+  const post = Posts.find((post) => post.slug === slug);
 
   if (!post) {
     notFound();

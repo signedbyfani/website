@@ -1,3 +1,5 @@
 onlyBuiltDependencies:
-  - '@vercel/speed-insights'
+  - "@biomejs/biome"
+  - "@vercel/speed-insights"
   - sharp
+  - unrs-resolver
