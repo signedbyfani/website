@@ -88,8 +88,8 @@ export const TableOfContents = () => {
         transition={{ duration: 0.25 }}
         className={cn(
           "top-[10rem] right-auto left-[2rem] hidden",
-          "xl:top-[6rem] xl:right-[16px] xl:left-auto xl:block", // Adjusted right margin
-          "fixed mt-0 h-full w-[16rem] justify-start space-y-4 transition",
+          "xl:top-[6rem] xl:right-[8px] xl:left-auto xl:block",
+          "fixed mt-0 h-full w-[12rem] justify-start space-y-4 transition",
         )}
       >
         <div className="mt-0 flex flex-col gap-0">
